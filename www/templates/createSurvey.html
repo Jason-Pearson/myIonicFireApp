@@ -1,0 +1,43 @@
+<ion-view title="Create Survey" id="page7" style="background-color:#DFFFFF;">
+  <ion-content padding="true" class="has-header">
+    <div class="item item-body" id="createSurvey-list-item-container7">
+      <div id="createSurvey-markdown10" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">
+          <strong>Survey Name</strong>
+        </p>
+      </div>
+      <div id="createSurvey-markdown13" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">Description</p>
+      </div>
+      <a ui-sref="tabsController.surveyInfo" id="createSurvey-button22" style="color:#50A0A5;text-align:left;" class="button button-stable  button-block button-outline icon ion-android-document"> Update Info</a>
+    </div>
+    <div class="item item-body" id="createSurvey-list-item-container6">
+      <div id="createSurvey-markdown9" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">
+          <strong>Questions</strong>
+        </p>
+      </div>
+      <div id="createSurvey-button-bar4" class="button-bar">
+        <button id="createSurvey-button41" style="color:#50A0A5;" class="button button-positive  button-block button-outline icon ion-android-add-circle"> Add</button>
+        <button id="createSurvey-button42" style="color:#50A0A5;" class="button button-positive  button-block button-outline icon ion-ios-minus"> Remove</button>
+      </div>
+      <ion-list id="createSurvey-list5">
+        <ion-item class="item-icon-left item-icon-right" id="createSurvey-list-item17" ui-sref="tabsController.createQuestion">
+          <i class="icon ion-android-radio-button-on"></i>Q1
+          <i class="icon ion-ios-list-outline icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-left item-icon-right" id="createSurvey-list-item21" ui-sref="tabsController.createQuestion">
+          <i class="icon ion-android-radio-button-on"></i>Q2
+          <i class="icon ion-ios-list-outline icon-accessory"></i>
+        </ion-item>
+        <ion-item class="item-icon-left item-icon-right" id="createSurvey-list-item23" ui-sref="tabsController.createQuestion">
+          <i class="icon ion-android-radio-button-on"></i>Q3
+          <i class="icon ion-ios-list-outline icon-accessory"></i>
+        </ion-item>
+      </ion-list>
+    </div>
+    <div style="margin-right:-20px;">
+      <a ui-sref="tabsController.yourSurveys" id="createSurvey-button27" style="left:-10px;color:#50A0A5;" class="button button-stable  button-full">Confirm Survey</a>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,61 @@
+<ion-view title="Your Surveys" id="page3" style="background-color:#DFFFFF;" class="has-header padding" has-tabs="true" on-refresh="onRefresh()">
+    <ion-content padding="true" class="has-header">
+        <form id="yourSurveys-form3" class="list">
+            <label class="item item-input" id="yourSurveys-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search By Name">
+      </label>
+        </form>
+        <div class="item item-body" id="yourSurveys-list-item-container11">
+            <div id="yourSurveys-markdown17" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">
+                    <strong>Recently Created</strong>
+                </p>
+            </div>
+            <ion-list id="yourSurveys-list6" ng-show="noData">
+                <span>
+      No Items in your bucket List. Click  <a href="javascript:" ng-click="newTask()">Here</a> and create one
+      </span>
+            </ion-list>
+        </div>
+        <div class="item item-body" id="yourSurveys-list-item-container22">
+            <div id="yourSurveys-markdown43" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">
+                    <strong>Recently Modified</strong>
+                </p>
+            </div>
+            <ion-list id="yourSurveys-list11">
+                <ion-item class="item-icon-right" id="yourSurveys-list-item48" ui-sref="tabsController.createSurvey">Untitled Survey
+                    <i class="icon ion-android-list"></i>
+                </ion-item>
+            </ion-list>
+        </div>
+        <div class="spacer" style="width: 300px; height: 24px;"></div>
+        <div class="item item-body" id="yourSurveys-list-item-container12">
+            <div id="yourSurveys-markdown18" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">
+                    <strong>All Surveys</strong>
+                </p>
+            </div>
+            <ion-list ng-repeat="item in list" id="{{item.key}}">
+                <label class="item item-select" id="yourSurveys-select3">
+          <span class="input-label">Sort</span>
+          <select>
+            <option>Created Date</option>
+            <option>Modified Date</option>
+            <option>Alphebetically</option>
+            <option>Responded Most</option>
+            <option>Completed Most</option>
+          </select>
+        </label>
+                <ion-item class="item-icon-right" ng-click="newTask()" id="yourSurveys-list-item31" ui-sref="tabsController.createSurvey">
+                    <span>{{ item.item }}</span>
+                    <i class="icon ion-android-list"></i>
+                    <i class="ion-checkmark-circled icon-actions margin" ng-click="markCompleted('{{item.key}}')"></i>
+                    <i class="ion-trash-b icon-actions margin" ng-click="deleteItem('{{item.key}}')"></i>
+                </ion-item>
+            </ion-list>
+        </div>
+        <div class="spacer" style="width: 300px; height: 24px;"></div>
+    </ion-content>
+</ion-view>

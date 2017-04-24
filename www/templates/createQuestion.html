@@ -1,0 +1,32 @@
+<ion-view title="Create Question" id="page10" style="background-color:#DFFFFF;">
+  <ion-content padding="true" class="has-header">
+    <form id="createQuestion-form11" class="list">
+      <div class="item item-body" id="createQuestion-list-item-container10">
+        <form id="createQuestion-form12" class="list">
+          <label class="item item-input" id="createQuestion-input15" name="survey_Name">
+            <span class="input-label">Question</span>
+            <input type="text" placeholder="What is 2+2?">
+          </label>
+          <ion-toggle toggle-class="toggle-positive" id="createQuestion-toggle7" name="toggleRdbChk">Radio or Checkbox</ion-toggle>
+          <div id="createQuestion-button-bar5" class="button-bar">
+            <button id="createQuestion-button44" style="color:#50A0A5;" class="button button-positive  button-block button-outline icon ion-android-add-circle"> Add</button>
+            <button id="createQuestion-button46" style="color:#50A0A5;" class="button button-positive  button-block button-outline icon ion-ios-minus"> Remove</button>
+          </div>
+          <h3 id="createQuestion-heading5" style="color:#000000;">Pick the answer(s)</h3>
+          <ion-radio id="createQuestion-radio7" name="Radio Answers">2</ion-radio>
+          <ion-radio id="createQuestion-radio9" name="Radio Answers">1</ion-radio>
+          <ion-radio id="createQuestion-radio10" name="Radio Answers">4</ion-radio>
+          <ion-radio id="createQuestion-radio11" name="Radio Answers">&lt;&gt;&lt;</ion-radio>
+          <div class="spacer" style="width: 266px; height: 19px;"></div>
+          <ion-checkbox id="createQuestion-checkbox1">2</ion-checkbox>
+          <ion-checkbox id="createQuestion-checkbox2">1</ion-checkbox>
+          <ion-checkbox id="createQuestion-checkbox3">4</ion-checkbox>
+          <ion-checkbox id="createQuestion-checkbox4">&lt;&gt;&lt;</ion-checkbox>
+        </form>
+      </div>
+    </form>
+    <div style="margin-right:-20px;">
+      <a ui-sref="tabsController.createSurvey" id="createQuestion-button26" style="left:-10px;color:#50A0A5;border-radius:10px 10px 10px 10px;" class="button button-stable  button-full">Confirm</a>
+    </div>
+  </ion-content>
+</ion-view>
