@@ -1,0 +1,11 @@
+{
+  "name": "myionicfireapp - ionic survey app",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jason Pearson",
+    "Daniel Kerr-Cresswell"
+  ],
+  "license": "ISC",
+  "homepage": ""
+}
